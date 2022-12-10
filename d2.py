@@ -8,6 +8,9 @@ with open('input/d2', 'r') as f:
         op, me = line.split(' ')
         op = ord(op) - ord('A') + 1
         me = ord(me) - ord('X') + 1
+        #op, me = ord(opp) - ord('A'),  ord(me) - ord('X')
+        #result += ((me - op + 1) % 3) * 3 + me + 1  
+        
         res += me
         sub = (me - op) % 3
         if sub == 0:
